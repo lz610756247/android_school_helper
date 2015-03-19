@@ -1,0 +1,21 @@
+<resources>
+
+    
+    <string name="app_name">云财盒子</string>
+    <string name="menu_settings">更多</string>
+    <string name="login_table">登陆界面</string>   
+    <string name="lesson_table">课表查看</string>
+    <string name="score_table">成绩查看</string>
+    <string name="library_table">图书馆</string>
+    <string name="look_notice">公告查看</string>
+    <string name="map">周边信息</string>
+    <string name="order_food_table">外卖订餐</string>
+    <string name="look_food">菜单列表</string>
+    <string name="second_hand">信息列表</string>
+    <string name="set_goods">发布商品</string>
+    <string name="submit_goods">确认提交</string>
+    <string name="subMessage">短信确认</string>
+    <string name="communication">教学班交流</string>
+    
+	
+</resources>

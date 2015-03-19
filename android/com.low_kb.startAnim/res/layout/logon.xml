@@ -1,0 +1,86 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/logon"
+    android:id="@+id/login_table">
+
+<RelativeLayout 
+    android:id="@+id/relativelayout"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:layout_marginTop="10dp">
+<TableRow
+    android:id="@+id/row1"
+    android:padding="5px"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent">
+    
+  <AutoCompleteTextView
+      android:id="@+id/usernamefiled"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"     
+      android:textSize="20dp"
+      android:singleLine="true"
+      android:hint="请输入学号"
+      android:completionThreshold="3" />
+</TableRow>
+
+<TableRow
+    android:id="@+id/row2"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:layout_below="@+id/row1">
+    
+  <EditText
+      android:id="@+id/passwordfiled"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:inputType="textPassword"
+      android:singleLine="true"
+      android:textSize="20dp"
+      android:hint="请输入密码"/>
+</TableRow>
+
+<TableRow
+    android:id="@+id/row5"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"    
+    android:layout_below="@+id/row2">
+  <Spinner
+      android:id="@+id/yat"
+      android:layout_height="wrap_content"
+      android:layout_width="fill_parent">
+      </Spinner>
+  </TableRow>
+
+<TableRow
+    android:id="@+id/row3"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"    
+    android:layout_below="@+id/row5">
+  <CheckBox
+      android:id="@+id/remenber"
+      android:layout_height="wrap_content"
+      android:layout_width="wrap_content"
+      android:checked="false"
+      android:text="记住密码,自动登录">
+      </CheckBox>
+  </TableRow>
+  
+<TableRow
+    android:id="@+id/row4"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"    
+    android:layout_below="@+id/row3">
+    
+  <Button
+      android:id="@+id/logon"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content" 
+      android:text="登陆"/>
+  
+</TableRow>
+</RelativeLayout>
+</LinearLayout>
+

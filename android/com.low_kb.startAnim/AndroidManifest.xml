@@ -1,0 +1,106 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.low_kb"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="8" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/> 
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>  
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name ="android.permission.SEND_SMS" /> 
+    <uses-permission android:name ="android.permission.RECEIVE_SMS" /> 
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        
+        <service android:name="listening_function.Notice_score" android:process=".message">                              
+		</service> 
+		<service android:name="listening_function.start_server" android:process=".message">                              
+		</service> 
+		<activity android:name="listening_function.Show_Down_Notice_Bar"/>  
+		<receiver android:name="listening_function.NetstateReceiver"> 
+		    <intent-filter> 
+		        <action android:name="android.net.conn.CONNECTIVITY_CHANGE" /> 
+		    </intent-filter> 
+		</receiver>  
+        
+        <activity android:name=".startAnim"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".login_table"
+            android:label="@string/login_table"/>                  
+        <activity android:name=".table"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".lesson_table"
+            android:label="@string/lesson_table"/>
+        <activity android:name=".score_table"
+            android:label="@string/score_table"/>
+        <activity android:name=".checkname_table"
+            android:label="@string/app_name"/>
+        <activity android:name=".notice_table"
+            android:label="@string/app_name"/>
+        <activity android:name=".wb_table"
+            android:label="@string/app_name"/>
+        <activity android:name=".send_weibo"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".library_table"
+            android:label="@string/library_table"/>
+        <activity android:name=".card_table"
+            android:label="@string/app_name"/>
+        <activity android:name=".t_table"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name"/>
+        <activity android:name=".main_function"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name"/>
+        <activity android:name=".look_weibo"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name"/>
+        <activity android:name=".look_notice"
+            android:screenOrientation="portrait"
+            android:label="@string/look_notice"/>
+        <activity android:name=".second_hand"
+            android:screenOrientation="portrait"
+            android:label="@string/second_hand"/>
+        <activity android:name=".set_goods"
+            android:screenOrientation="portrait"
+            android:label="@string/set_goods"/>
+        <activity android:name=".submit_goods"
+            android:screenOrientation="portrait"
+            android:label="@string/submit_goods"/>
+        <activity android:name=".order_food_table"
+             
+             android:label="@string/order_food_table"/>
+        <activity android:name=".look_food"
+             android:screenOrientation="portrait"
+             android:label="@string/look_food"/>
+        <activity android:name=".subMessage"
+             android:screenOrientation="portrait"
+             android:label="@string/subMessage"/>
+        <activity android:name=".map"
+            android:screenOrientation="portrait"
+            android:label="@string/map"/>
+        <activity android:name=".communication"
+             android:screenOrientation="portrait"
+             android:label="@string/communication"/>
+        <activity android:name=".chat_table"
+             android:screenOrientation="portrait"
+             android:label="@string/communication"/>
+        <activity android:name=".his_chat"
+             android:screenOrientation="portrait"
+             android:label="@string/communication"/>
+    </application>
+
+</manifest>

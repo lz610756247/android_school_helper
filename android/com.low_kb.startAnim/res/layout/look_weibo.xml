@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#4876FF"
+        android:orientation="horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mz"
+        android:textColor="#080808" 
+        android:textSize="30px"
+        android:paddingLeft="20px"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mc"
+        android:textSize="24px"
+        android:singleLine="true"
+	    android:ellipsize="marquee"   
+	    android:focusable="true"   
+	    android:marqueeRepeatLimit="marquee_forever"   
+	    android:focusableInTouchMode="true"   
+	    android:scrollHorizontally="true" 
+	    android:text="我的跑马灯效果测试，看吧，这就是跑马灯效果；其实就是动画横向移动"
+	    android:paddingTop="20px"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nr"
+        android:textColor="#080808"
+        android:textSize="30px"
+        android:padding="20px" />
+
+</LinearLayout>

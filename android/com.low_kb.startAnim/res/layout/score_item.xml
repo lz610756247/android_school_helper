@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout 
+    android:id="@+id/relativelayout"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:layout_marginTop="10dp">
+    <TableRow
+    android:id="@+id/row1"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:text="课程: "/>
+    <TextView
+        android:id="@+id/kcmc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:textSize="17dp"
+        android:textColor="#000000"/>
+    </TableRow>
+    <TableRow
+    android:id="@+id/row5"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:layout_below="@+id/row1">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:text="课程教师: "/>
+    <TextView
+        android:id="@+id/kkjs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:textSize="17dp"
+        android:textColor="#000000"/>
+    </TableRow>
+    <TableRow
+    android:id="@+id/row2"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:layout_below="@+id/row5">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:text="成绩: "/>
+    <TextView
+        android:id="@+id/cj"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:textSize="17dp"
+        android:textColor="#000000"/>
+    </TableRow>
+  </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:orientation="vertical">
+
+    
+    <EditText 
+        android:id="@+id/edt01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="商品名称"
+        />
+     <EditText 
+        android:id="@+id/edt02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="商品价格"
+        
+        />
+      <EditText 
+        android:id="@+id/edt03"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="上传者"
+        />
+       <EditText 
+        android:id="@+id/edt04"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="联系电话"
+        />
+    
+    <Button 
+        android:id="@+id/btn01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="发布商品信息"
+        
+        />
+
+</LinearLayout>

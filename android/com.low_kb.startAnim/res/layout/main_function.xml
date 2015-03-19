@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/s_table_relativelayout" 
+    android:background="@drawable/b1">
+    <RelativeLayout
+       android:orientation="vertical"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_centerHorizontal="true"
+       android:layout_centerVertical="true">
+       <TableRow
+          android:id="@+id/row1"
+          android:padding="5px"
+          android:layout_height="wrap_content"
+          android:layout_width="wrap_content"
+          android:layout_centerHorizontal="true">
+          
+           
+          <!-- 课表按钮开始 -->
+          <RelativeLayout
+		    android:layout_width="100dip"
+	        android:layout_height="100dip"
+		    android:layout_centerHorizontal="true"
+		    android:layout_centerVertical="true">
+		    <Button
+		        android:id="@+id/slesson"
+		        android:layout_width="100dip"
+		        android:layout_height="100dip"
+		        android:layout_marginTop="0px"
+		        android:scaleType="fitEnd"
+		        android:background="@color/lessonx">
+	     	</Button>
+		     <ImageView 
+		         android:layout_alignBottom="@+id/slesson"        
+		         android:layout_marginTop="10dip"
+		         android:layout_marginBottom="60dip"
+		         android:layout_centerHorizontal="true"	         
+		         android:layout_width="65dip"
+		         android:layout_height="65dip"
+		         android:src="@drawable/lesson_ico">     
+		     </ImageView>
+		     <TextView
+		         android:layout_alignBottom="@+id/slesson"
+		         android:layout_marginBottom="15dip"
+		         android:layout_centerHorizontal="true"	         
+		         android:layout_width="wrap_content"
+		         android:layout_height="wrap_content"
+		         android:textColor="#FFFFF0"
+		         android:textSize="15dip"
+		         android:text="课表查看">
+		     </TextView>
+	    </RelativeLayout>
+        <!-- 课表按钮结束-->  
+        
+        
+        <!-- 成绩按钮开始 -->
+          <RelativeLayout
+		    android:layout_width="100dip"
+	        android:layout_height="100dip"
+		    android:layout_centerHorizontal="true"
+		    android:layout_centerVertical="true"
+		    android:layout_marginLeft="50px">
+		    <Button
+		        android:id="@+id/sscore"
+		        android:layout_width="100dip"
+		        android:layout_height="100dip"
+		        android:layout_marginTop="0px"
+		        android:scaleType="fitEnd"
+		        android:background="@color/scorex">
+	     	</Button>
+		     <ImageView 
+		         android:layout_alignBottom="@+id/sscore"        
+		         android:layout_marginTop="10dip"
+		         android:layout_marginBottom="60dip"
+		         android:layout_centerHorizontal="true"	         
+		         android:layout_width="65dip"
+		         android:layout_height="65dip"
+		         android:src="@drawable/score_ico">     
+		     </ImageView>
+		     <TextView
+		         android:layout_alignBottom="@+id/sscore"
+		         android:layout_marginBottom="15dip"
+		         android:layout_centerHorizontal="true"	         
+		         android:layout_width="wrap_content"
+		         android:layout_height="wrap_content"
+		         android:textColor="#FFFFF0"
+		         android:textSize="15dip"
+		         android:text="成绩查看">
+		     </TextView>
+	    </RelativeLayout>
+        <!-- 成绩按钮结束-->
+        
+        
+       </TableRow>
+       
+       
+       <TableRow
+          android:id="@+id/row2"
+          android:padding="5px"
+          android:layout_height="wrap_content"
+          android:layout_width="wrap_content"
+          android:layout_centerHorizontal="true"
+          android:layout_below="@+id/row1">
+          
+           
+          <!-- 图书馆按钮开始 -->
+          <RelativeLayout
+		    android:layout_width="100dip"
+	        android:layout_height="100dip"
+		    android:layout_centerHorizontal="true"
+		    android:layout_centerVertical="true">
+		    <Button
+		        android:id="@+id/slibrary"
+		        android:layout_width="100dip"
+		        android:layout_height="100dip"
+		        android:layout_marginTop="0px"
+		        android:scaleType="fitEnd"
+		        android:background="@color/libraryx">
+	     	</Button>
+		     <ImageView 
+		         android:layout_alignBottom="@+id/slibrary"        
+		         android:layout_marginTop="10dip"
+		         android:layout_marginBottom="60dip"
+		         android:layout_centerHorizontal="true"	         
+		         android:layout_width="65dip"
+		         android:layout_height="65dip"
+		         android:src="@drawable/library_ico">     
+		     </ImageView>
+		     <TextView
+		         android:layout_alignBottom="@+id/slibrary"
+		         android:layout_marginBottom="15dip"
+		         android:layout_centerHorizontal="true"	         
+		         android:layout_width="wrap_content"
+		         android:layout_height="wrap_content"
+		         android:textColor="#FFFFF0"
+		         android:textSize="15dip"
+		         android:text="图书馆">
+		     </TextView>
+	    </RelativeLayout>
+        <!-- 图书馆按钮结束-->
+        
+        
+        
+        <!-- 公告按钮开始 -->
+        <RelativeLayout
+		    android:layout_width="100dip"
+	        android:layout_height="100dip"
+		    android:layout_centerHorizontal="true"
+		    android:layout_centerVertical="true"
+		    android:layout_marginLeft="50px">
+		    <Button
+		        android:id="@+id/snotice"
+		        android:layout_width="100dip"
+		        android:layout_height="100dip"
+		        android:layout_marginTop="0px"
+		        android:scaleType="fitEnd"
+		        android:background="@color/noticex">
+	     	</Button>
+		     <ImageView 
+		         android:layout_alignBottom="@+id/snotice"        
+		         android:layout_marginTop="10dip"
+		         android:layout_marginBottom="60dip"
+		         android:layout_centerHorizontal="true"	         
+		         android:layout_width="65dip"
+		         android:layout_height="65dip"
+		         android:src="@drawable/notice_ico">     
+		     </ImageView>
+		     <TextView
+		         android:layout_alignBottom="@+id/snotice"
+		         android:layout_marginBottom="15dip"
+		         android:layout_centerHorizontal="true"	         
+		         android:layout_width="wrap_content"
+		         android:layout_height="wrap_content"
+		         android:textColor="#FFFFF0"
+		         android:textSize="15dip"
+		         android:text="最新公告">
+		     </TextView>
+	    </RelativeLayout>
+        <!-- 公告按钮结束-->
+        
+        
+       </TableRow>
+       
+       
+       <TableRow
+          android:id="@+id/row3"
+          android:padding="5px"
+          android:layout_height="wrap_content"
+          android:layout_width="wrap_content"
+          android:layout_centerHorizontal="true"
+          android:layout_below="@+id/row2">
+         
+           
+        <!-- 订餐按钮开始 -->
+        <RelativeLayout
+		    android:layout_width="100dip"
+	        android:layout_height="100dip"
+		    android:layout_centerHorizontal="true"
+		    android:layout_centerVertical="true">
+		    <Button
+		        android:id="@+id/sfood"
+		        android:layout_width="100dip"
+		        android:layout_height="100dip"
+		        android:layout_marginTop="0px"
+		        android:scaleType="fitEnd"
+		        android:background="@color/foodx">
+	     	</Button>
+		     <ImageView 
+		         android:layout_alignBottom="@+id/sfood"        
+		         android:layout_marginTop="10dip"
+		         android:layout_marginBottom="60dip"
+		         android:layout_centerHorizontal="true"	         
+		         android:layout_width="65dip"
+		         android:layout_height="65dip"
+		         android:src="@drawable/food_ico">     
+		     </ImageView>
+		     <TextView
+		         android:layout_alignBottom="@+id/sfood"
+		         android:layout_marginBottom="15dip"
+		         android:layout_centerHorizontal="true"	         
+		         android:layout_width="wrap_content"
+		         android:layout_height="wrap_content"
+		         android:textColor="#FFFFF0"
+		         android:textSize="15dip"
+		         android:text="外卖订餐">
+		     </TextView>
+	      </RelativeLayout>
+          <!-- 订餐按钮结束-->
+           
+           
+           
+          <!-- 二手市场按钮开始 -->
+          <RelativeLayout
+		    android:layout_width="100dip"
+	        android:layout_height="100dip"
+		    android:layout_centerHorizontal="true"
+		    android:layout_centerVertical="true"
+		    android:layout_marginLeft="50px">
+		    <Button
+		        android:id="@+id/ssecondhand"
+		        android:layout_width="100dip"
+		        android:layout_height="100dip"
+		        android:layout_marginTop="0px"
+		        android:scaleType="fitEnd"
+		        android:background="@color/secondhandx">
+	     	</Button>
+		     <ImageView 
+		         android:layout_alignBottom="@+id/ssecondhand"        
+		         android:layout_marginTop="10dip"
+		         android:layout_marginBottom="60dip"
+		         android:layout_centerHorizontal="true"	         
+		         android:layout_width="65dip"
+		         android:layout_height="65dip"
+		         android:src="@drawable/secondhand_ico">     
+		     </ImageView>
+		     <TextView
+		         android:layout_alignBottom="@+id/ssecondhand"
+		         android:layout_marginBottom="15dip"
+		         android:layout_centerHorizontal="true"	         
+		         android:layout_width="wrap_content"
+		         android:layout_height="wrap_content"
+		         android:textColor="#FFFFF0"
+		         android:textSize="15dip"
+		         android:text="二手市场">
+		     </TextView>
+	    </RelativeLayout>
+        <!-- 二手市场按钮结束-->
+        
+        
+       </TableRow>
+	<TableRow
+          android:id="@+id/row4"
+          android:padding="5px"
+          android:layout_height="wrap_content"
+          android:layout_width="wrap_content"
+          android:layout_centerHorizontal="true"
+          android:layout_below="@+id/row3">
+          
+        
+        <!-- 周边地图按钮开始 -->
+        <RelativeLayout
+            android:layout_width="100dip"
+	        android:layout_height="100dip"
+		    android:layout_centerHorizontal="true"
+		    android:layout_centerVertical="true">
+		    <Button
+		        android:id="@+id/map"
+		        android:layout_width="100dip"
+		        android:layout_height="100dip"
+		        android:layout_marginTop="0px"
+		        android:scaleType="fitEnd"
+		        android:background="@color/mapx">
+	     	</Button>
+		     <ImageView 
+		         android:layout_alignBottom="@+id/map"        
+		        android:layout_marginTop="10dip"
+		         android:layout_marginBottom="60dip"
+		         android:layout_centerHorizontal="true"	         
+		         android:layout_width="65dip"
+		         android:layout_height="65dip"
+		         android:src="@drawable/map_ico">     
+		     </ImageView>
+		     <TextView
+		         android:layout_alignBottom="@+id/map"
+		         android:layout_marginBottom="15dip"
+		         android:layout_centerHorizontal="true"	         
+		         android:layout_width="wrap_content"
+		         android:layout_height="wrap_content"
+		         android:textColor="#FFFFF0"
+		         android:textSize="15dip"
+		         android:text="周边信息">
+		     </TextView>
+	      </RelativeLayout>
+        <!-- 周边地图按钮结束-->
+        
+        
+        
+        <!-- 教学班交流按钮开始 -->
+          <RelativeLayout
+		    android:layout_centerHorizontal="true"
+		    android:layout_centerVertical="true"
+		    android:layout_marginLeft="50px">
+		    <Button
+		        android:id="@+id/com"
+		        android:layout_width="100dip"
+		        android:layout_height="100dip"
+		        android:layout_marginTop="0px"
+		        android:scaleType="fitEnd"
+		        android:background="@color/comx">
+	     	</Button>
+		     <ImageView 
+		         android:layout_alignBottom="@+id/com"        
+		         android:layout_marginTop="10dip"
+		         android:layout_marginBottom="60dip"
+		         android:layout_centerHorizontal="true"	         
+		         android:layout_width="65dip"
+		         android:layout_height="65dip"
+		         android:src="@drawable/com_ico">     
+		     </ImageView>
+		     <TextView
+		         android:layout_alignBottom="@+id/com"
+		         android:layout_marginBottom="15dip"
+		         android:layout_centerHorizontal="true"	         
+		         android:layout_width="wrap_content"
+		         android:layout_height="wrap_content"
+		         android:textColor="#FFFFF0"
+		         android:textSize="15dip"
+		         android:text="班级交流">
+		     </TextView>
+	    </RelativeLayout>
+        <!-- 教学班交流按钮结束-->
+          
+       </TableRow>
+       
+       
+	</RelativeLayout>
+</RelativeLayout>

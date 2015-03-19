@@ -1,0 +1,22 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:id="@+id/exchange">
+	<Button 
+        android:id="@+id/btn01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="获取服务器端数据库中现有的物品数据"/>
+    <Button 
+         android:id="@+id/btn02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="发布商品信息"/>
+    
+    <ListView 
+	    android:id="@+id/exchange_listview"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"/>
+</LinearLayout>

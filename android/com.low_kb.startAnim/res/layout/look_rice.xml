@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/look_rice" >
+    <LinearLayout 
+			    android:layout_width="match_parent"
+			    android:layout_height="match_parent"
+			    android:orientation="vertical" >
+			    <TextView
+					android:id="@+id/resname"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:paddingLeft="20dp" 
+					android:textSize="25dp"/>
+			    <TextView
+					android:id="@+id/resphone"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:paddingLeft="28dp"
+					android:textSize="20dp"
+					android:visibility="gone"/>
+			    <TableRow
+				    android:padding="5px"
+				    android:layout_height="wrap_content"
+				    android:layout_width="match_parent">
+				    <Button
+					      android:id="@+id/callphone"
+					      android:layout_width="wrap_content"
+					      android:layout_height="wrap_content" 
+					      android:text="打电话"/>
+				    <Button
+					      android:id="@+id/sendmessage"
+					      android:layout_width="wrap_content"
+					      android:layout_height="wrap_content" 
+					      android:text="发短信"/>
+				</TableRow>
+			    <LinearLayout 
+			        android:id="@+id/respb"
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content"
+				    android:orientation="vertical" >
+				    <ProgressBar 
+				        style="?android:attr/progressBarStyleLarge"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_gravity="center_horizontal"/>
+				    <TextView
+						android:id="@+id/resphone"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_gravity="center_horizontal"
+						android:textSize="15dp"
+						android:text="正在加载菜单"/>
+				</LinearLayout>
+			    <LinearLayout 
+				    android:layout_width="match_parent"
+				    android:layout_height="match_parent"
+				    android:orientation="vertical" >
+				   <ListView 
+				    android:id="@+id/rice_listview"
+				    android:layout_width="fill_parent"
+					android:layout_height="wrap_content"/>
+				</LinearLayout>
+		   </LinearLayout>
+</LinearLayout>

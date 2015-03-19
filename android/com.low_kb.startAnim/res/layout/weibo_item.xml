@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B5B5B5"
+    android:orientation="vertical" >
+    <RelativeLayout 
+    android:id="@+id/relativelayout"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:layout_marginTop="10dp">
+    <TableRow
+    android:id="@+id/row1"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:text="个人描述: "/>
+    <TextView
+        android:id="@+id/mc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:textSize="17dp"
+        android:textColor="#000000"/>
+    </TableRow>
+    
+    <TableRow
+    android:id="@+id/row2"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:layout_below="@+id/row1">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:text="内容: "/>
+    <TextView
+        android:id="@+id/nr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:textSize="17dp"
+        android:textColor="#000000"/>
+    </TableRow>
+    <TableRow
+    android:id="@+id/row3"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"    
+    android:layout_below="@+id/row2">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:text="名字: "/>
+    <TextView
+        android:id="@+id/mz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:textSize="17dp"
+        android:textColor="#000000"/>
+    </TableRow>
+    <TableRow
+    android:id="@+id/row4"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:layout_below="@+id/row3">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:text="发表时间: "/>
+    <TextView
+        android:id="@+id/sj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:textSize="17dp"
+        android:textColor="#000000"/>
+    </TableRow>
+    
+    </RelativeLayout>
+
+</LinearLayout>
